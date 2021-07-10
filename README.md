@@ -5,7 +5,7 @@
 # Creating a book
 
 This is the first version of *my personal portfolio* where I'll be sharing the projects and studies that I find
-useful to share. The framework has *three sections* to highlight the most important information about the mission and
+useful. The framework has *three sections* to highlight the most important information about the mission and
 capabilities. 
 
 ### v.1.0
