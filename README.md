@@ -19,4 +19,4 @@ This project makes use of:
 - [x] `:nth-childs` to manipulate *HTML* tags in responsive displays
 - [x] `@medias` for responsive devices
 
-###### Pushed on July 9, 2021. 
+###### Pushed on July 9, 2021.
