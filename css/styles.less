@@ -1,0 +1,755 @@
+    :root {
+        --bg_main: #291D90;
+        --border_solid: 1px solid #6A5ED5;
+        --border_dashed: 1px dashed #B05ED5;
+        --border_radius: 8px;
+        --green: #38FFAC;
+        --white: #fff;
+        --yellow: #FADC00;
+        --pink: #B05ED5;
+        --neon_01: #B3ADE6;
+        --neon_02: #9B94D6;
+        --font: "Roboto Mono", monospace, sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6, p, section, ul li, ol li, button, span, a {
+        font-family: var(--font);
+        &::selection {
+            background: var(--green);
+            color: var(--bg_main);
+        }
+    }
+    .box, button, img {
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    body {
+        background: var(--bg_main);
+        margin: 0 auto;
+
+        header {
+            width: 98%;
+            align-items: center;
+            background: var(--bg_main);
+            border-bottom: 1px dashed var(--pink);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1%;
+            position: fixed;
+            z-index: 1;
+            section {
+                ul {
+                    align-items: center;
+                    display: flex;
+                    padding: 0;
+                    &.left {
+                        li {
+                            list-style: none;
+                            margin: 0 18px 0 0;
+                            img {
+                                height: 50px;
+                            }
+                            a {
+                                display: block;
+                            }
+                        }
+                    }
+                    &.right {
+                        li {
+                            list-style: none;
+                            button {
+                                background: none;
+                                border: var(--border_solid);
+                                border-radius: var(--border_radius);
+                                color: var(--white);
+                                cursor: pointer;
+                                font-size: 1em;
+                                margin: 0 0 0 18px;
+                                padding: 14px 20px;
+                                text-transform: uppercase;
+                                &:hover {
+                                    background: var(--white);
+                                    color: var(--bg_main);
+                                }
+                                &:focus {
+                                    box-shadow: 0 0 0 3px var(--green);
+                                }
+                                &:active {
+                                    background: var(--white);
+                                    border: 1px solid var(--white);
+                                    color: var(--bg_main);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 100px 0 0;
+            .info {
+                display: flex;
+                justify-content: center;
+                padding: 3% 4% 2%;
+                section {
+                    flex: 1;
+                    &:nth-child(1) {
+                        flex: 2;
+                        padding: 0 30px 0 0;
+                    }
+                    &:nth-child(2) {}
+                    h1 {
+                        color: var(--white);
+                        font-size: 3.125em;
+                        font-weight: 400;
+                        margin: 0;
+                        span {
+                            margin: 0 0 0 90px;
+                        }
+                    }
+                    h4 {
+                        color: var(--neon_01);
+                        font-size: 1.25em;
+                        font-weight: 400;
+                        margin: 14px auto 0;
+                        text-align: center;
+                    }
+                    p {
+                        color: var(--neon_02);
+                        font-size: 1.875em;
+                        margin: 20px 0 30px;
+                        &.credits {
+                            color: var(--white);
+                            font-size: 1.25em;
+                            margin: 6px auto 0;
+                            text-align: center;
+                        }
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .repositories {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin: 40px auto 60px;
+
+                .title {
+                    width: 92%;
+                    color: var(--green);
+                    font-size: 1.875em;
+                    font-weight: 400;
+                    margin: 0 0 24px;
+                    text-align: left;
+                    &::before {
+                        content: "📁";
+                        margin: 0 16px 0 0;
+                    }
+                }
+                .description {
+                    width: 92%;
+                    color: var(--white);
+                    font-size: 1.25em;
+                    line-height: 1.4;
+                    margin: 0 0 40px;
+                }
+                button {
+                    width: 95%;
+                    max-width: 400px;
+                    background: var(--bg_main);
+                    border: 1px solid var(--green);
+                    border-radius: var(--border_radius);
+                    color: var(--white);
+                    cursor: pointer;
+                    display: block;
+                    font-size: 1.375em;
+                    font-weight: 400;
+                    letter-spacing: .2px;
+                    margin: 30px 0 0;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    &:hover {
+                        background: var(--green);
+                        color: var(--bg_main);
+                    }
+                    &:focus {
+                        box-shadow: 0 0 0 3px var(--green);
+                    }
+                    &:active {
+                        background: var(--white);
+                        border: 1px solid var(--white);
+                        color: var(--bg_main);
+                    }
+                }
+
+                .box {
+                    width: 11%;
+                    background-image: linear-gradient(135deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);
+                    border-radius: var(--border_radius);
+                    border: var(--border_solid);
+                    cursor: pointer;
+                    margin: 0 1%;
+                    padding: 1.2% 1.5% 1%;
+                    h2 {
+                        color: var(--white);
+                        font-size: 1em;
+                        font-weight: 400;
+                        margin: 0 0 12px;
+                    }
+                    h4 {
+                        border-bottom: 1px dashed var(--pink);
+                        color: var(--white);
+                        font-size: .625em;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        margin: 0 0 12px;
+                        padding: 0 0 18px;
+                        text-transform: uppercase;
+                        &::before {
+                            width: 5px;
+                            height: 10px;
+                            background: var(--green);
+                            border-radius: 50px;
+                            color: var(--green);
+                            content: "__";
+                            padding: 0;
+                            margin: 0 8px 0 0;
+                        }
+                        &.date {
+                            border: 0;
+                            color: var(--neon_02);
+                            margin: 0 0 2px;
+                            padding: 0;
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+                    p {
+                        color: var(--neon_01);
+                        font-size: .875em;
+                        margin: 0 0 18px;
+                    }
+
+                    &:hover {
+                        border: 1px solid rgba(106,94,213,.5);
+                        background-image: linear-gradient(135deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.03) 0%, #000000 100%);
+                        -webkit-box-shadow: 0 14px 12px -18px rgba(0,0,0,70%);
+                        -moz-box-shadow: 0 14px 12px -18px rgba(0,0,0,70%);
+                        box-shadow: 0 14px 12px -18px rgba(0,0,0,70%);
+                        h2 {
+                            color: var(--yellow);
+                        }
+                        h4 {
+                            &::before {}
+                            &.date {
+                                &::before {}
+                            }
+                        }
+                        p {
+                            color: var(--neon_01);
+                            font-size: .875em;
+                            margin: 0 0 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 80px 9% 20px;
+            section {
+                h2 {
+                    color: var(--white);
+                    font-size: 3.125em;
+                    font-weight: 400;
+                    margin: 0;
+                    span {
+                        margin: 0 0 0 90px;
+                    }
+                }
+                p {
+                    width: 70%;
+                    color: var(--neon_01);
+                    font-size: 1.875em;
+                    margin: 30px 0 0;
+                }
+                section {
+                    padding: 0;
+                    &.above {
+                        margin: 100px auto 0;
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+                        ul {
+                            align-items: center;
+                            display: flex;
+                            list-style: none;
+                            margin: 40px 0 0;
+                            padding: 0;
+                            li {
+                                display: inline-block;
+                                margin: 0 30px 0 0;
+                                button {
+                                    width: 320px;
+                                    background: var(--green);
+                                    border: 0;
+                                    border-radius: var(--border_radius);
+                                    color: var(--bg_main);
+                                    cursor: pointer;
+                                    font-size: 1.875em;
+                                    padding: 6px 20px;
+                                    &:hover {
+                                        background: var(--white);
+                                        color: var(--bg_main);
+                                    }
+                                    &:focus {
+                                        box-shadow: 0 0 0 3px var(--green);
+                                    }
+                                    &:active {
+                                        background: var(--white);
+                                        border: 1px solid var(--white);
+                                        color: var(--bg_main);
+                                    }
+                                }
+                                a {
+                                    display: block;
+                                    img {
+                                        width: 44px;
+                                        opacity: .5;
+                                    }
+                                    &:hover {
+                                        img {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                            &.right {
+                                li {
+                                    a {
+                                        img {
+                                            width: 110px;
+                                            opacity: 1;
+                                        }
+                                        &:hover {
+                                            img {
+                                                opacity: .5;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.below {
+                        margin: 60px auto 0;
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+                        ul {
+                            align-items: center;
+                            display: flex;
+                            list-style: none;
+                            padding: 0;
+                            li {
+                                color: var(--white);
+                                font-size: 1em;
+                                display: inline-block;
+                                margin: 0 30px 0 0;
+                                a {
+                                    color: var(--neon_01);
+                                    text-decoration: none;
+                                }
+                            }
+                            &.right {
+                                li {
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        body {
+            main {
+                .info {
+                    section {
+                        &:nth-child(1) {
+                            flex: 1;
+                        }
+                        h1 {
+                            font-size: 2.5em;
+                            span {
+                                margin: 0 0 0 50px;
+                            }
+                        }
+                        p {
+                            font-size: 1.5em;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+                .repositories {
+                    .title {
+                        width: 76%;
+                    }
+                    .description {
+                        width: 76%;
+                    }
+                    button {
+                        margin: 20px 0 0;
+                    }
+                    .box {
+                        width: 22%;
+                        margin: 0 1% 2%;
+                    }
+                }
+            }
+            footer {
+                padding: 0 4%;
+                section {
+                    h2 {
+                        font-size: 2.5em;
+                        span {
+                            margin: 0 0 0 50px;
+                        }
+                    }
+                    p {
+                        font-size: 1.5em;
+                        line-height: 1.5;
+                    }
+                    section {
+                        &.above {
+                            margin: 30px auto 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        body {
+            main {
+                .info {
+                    flex-wrap: wrap;
+                    padding: 3% 12% 0;
+                    section {
+                        flex: auto;
+                        &:nth-child(1) {
+                            flex: auto;
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        body {
+            main {}
+            footer {
+                padding: 0 9%;
+                section {
+                    h2 {
+                        span {}
+                    }
+                    p {
+                        width: 100%;
+                    }
+                    section {
+                        &.above {
+                            display: block;
+                        }
+                        &.below {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        body {
+            main {
+                .info {
+                    padding: 3% 8% 0;
+                    section {
+                        h1 {
+                            span {
+                                margin: 0 0 0 80px;
+                            }
+                        }
+                        p {
+                            margin: 20px 0 0;
+                        }
+                    }
+                }
+                .repositories {
+                    .title {
+                        width: 84%;
+                    }
+                    .description {
+                        width: 84%;
+                    }
+                    .box {
+                        width: 36%;
+                        margin: 0 2% 4%;
+                        padding: 4%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        body {
+            header {
+                width: 94%;
+                background: var(--white);
+                border: 0;
+                bottom: 0;
+                padding: 0 3%;
+                section {
+                    ul {
+                        margin: 14px 0 10px;
+                        &.left {
+                            li {
+                                img {
+                                    height: 40px;
+                                }
+                                &:last-child {
+                                    display: none;
+                                }
+                            }
+                        }
+                        &.right {
+                            li {
+                                button {
+                                    color: var(--bg_main);
+                                    font-size: .8em;
+                                    padding: 9px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            main {
+                padding: 10px 0 0;
+                .info {
+                    section {
+                        h1 {
+                            font-size: 2em;
+                            span {
+                                margin: 0 0 0 30px;
+                            }
+                        }
+                        p {
+                            font-size: 1.25em;
+                        }
+                    }
+                }
+            }
+            footer {
+                section {
+                    text-align: center;
+                    h2 {
+                        font-size: 2em;
+                        span {
+                            margin: 0 0 0 20px;
+                        }
+                    }
+                    p {
+                        font-size: 1.25em;
+                    }
+                    section {
+
+                        &.above {
+                            ul {
+                                display: grid;
+                                li {
+                                    margin: 30px 0 0;
+                                    &:first-child {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &.below {
+                            margin: 50px auto 50px;
+                            ul {
+                                display: block;
+                                li {
+                                    margin: 0 15px;
+                                }
+                                &.right {
+                                    li {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        body {
+            header {
+                width: 92%;
+                padding: 0 4%;
+                section {
+                    margin: 0 auto;
+                    ul {
+                        &.left {
+                            li {
+                                margin: 0;
+                            }
+                        }
+                        &.right {
+                            li {
+                                button {
+                                    margin: 0 10px;
+                                }
+                                &:first-child, &:last-child {
+                                    button {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+            main {
+                .info {
+                    section {
+                        &:nth-child(2) {
+                            display: block;
+                            margin: 30px auto 0;
+                            text-align: center;
+                        }
+                        h1 {
+                            color: var(--green);
+                            font-size: 1.7em;
+                            span {
+                                margin: 0;
+                            }
+                        }
+                        h4 {
+                            font-size: 1em;
+                            margin: 10px auto 0;
+                        }
+                        p {
+                            color: var(--white);
+                            font-size: 1em;
+                            line-height: 1.6;
+                            &.credits {
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                .repositories {
+                    .title {
+                        width: 80%;
+                        font-size: 1.75em;
+                    }
+                    .description {
+                        width: 80%;
+                        font-size: 1.1250em;
+                        line-height: 1.6em;
+                        margin: 0 0 32px;
+                    }
+                    button {
+                        width: 90%;
+                        margin: 0;
+                    }
+                    .box {
+                        width: 80%;
+                        margin: 0 2% 8%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        body {
+            header {
+                section {
+                    ul {
+                        &.left {
+                            li {}
+                        }
+                        &.right {
+                            li {
+                                button {
+                                    padding: 9px 15px;
+                                }
+                            }
+                        }
+                    }
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+            main {
+                .info {
+                    section {
+                        h1 {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                .repositories {
+                    .title {
+                        font-size: 1.5625em;
+                    }
+                    .description {
+                        font-size: 1em;
+                    }
+                }
+            }
+            footer {
+                section {
+                    section {
+                        &.above {
+                            ul {
+                                li {
+                                    button {
+                                        width: 280px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
