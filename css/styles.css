@@ -214,6 +214,9 @@ body main .repositories .box {
   margin: 0 1%;
   padding: 1.2% 1.5% 1%;
 }
+body main .repositories .box a {
+  text-decoration: none;
+}
 body main .repositories .box h2 {
   color: var(--white);
   font-size: 1em;
