@@ -6,7 +6,7 @@
 
 This is the first version of *my personal portfolio* where I'll be sharing the projects and studies that I find
 useful. The framework has *three sections* to highlight the most important information about the mission and
-capabilities. 
+capabilities. [Visit the portfolio!](https://ca2los.github.io/portfolio/)
 
 ### v.1.0
 
