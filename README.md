@@ -4,13 +4,21 @@
 
 # Creating a book
 
-This is the first version of *my personal portfolio* where I'll be sharing the projects and studies that I find
-useful. The framework has *three sections* to highlight the most important information about the mission and
-capabilities. [Visit the portfolio!](https://ca2los.github.io/portfolio/)
+This is version of *my personal portfolio* has been updated to show my latest projects and studies at the Coding 
+Bootcamp. The framework still has *three sections* to highlight the most important information about me and the 
+projects I had been working on. 
 
-### v.1.0
+###[Visit the portfolio!](https://ca2los.github.io/portfolio/)
 
-This project makes use of:
+### v.1.1
+###### August 21, 2021.
+
+### NO FRAMEWORKS HERE!
+The website is free of frameworks, because I feel more comfortable by working with my own structure and styling. I 
+find more challenging and satisfying by creating elements by myself. I do have some framework alternatives, but I
+try to avoid them.
+
+### TECHNOLOGIES
 
 - [x] `HTML 5 syntax` as the *main structure*
 - [x] `LESS syntax` for *styling* the look and feel of the webpage
@@ -19,4 +27,6 @@ This project makes use of:
 - [x] `:nth-childs` to manipulate *HTML* tags in responsive displays
 - [x] `@medias` for responsive devices
 
-###### Pushed on July 9, 2021.
+### WHAT'S NEXT?
+For a website like this, making use Javascript is not necessary. Instead, I'm waiting to get more used and comfortable
+with **Node JS** or other technologies to implement some ideas.
