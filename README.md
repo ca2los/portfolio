@@ -6,7 +6,7 @@ This is version of *my personal portfolio* has been updated to show my latest pr
 Bootcamp. The framework still has *three sections* to highlight the most important information about me and the 
 projects I had been working on. 
 
-###[Visit the portfolio!](https://ca2los.github.io/portfolio/)
+### [Visit the portfolio!](https://ca2los.github.io/portfolio/)
 
 ### v.1.1
 ###### August 21, 2021.
