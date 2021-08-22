@@ -1,9 +1,7 @@
-# HW #02 - Portfolio
-### By Carlos Aguirre Oseguera
-#### Week: June 28 / July 4
+# Portfolio
+#### By Carlos Aguirre Oseguera
 
-# Creating a book
-
+### GET TO KNOW ME
 This is version of *my personal portfolio* has been updated to show my latest projects and studies at the Coding 
 Bootcamp. The framework still has *three sections* to highlight the most important information about me and the 
 projects I had been working on. 
