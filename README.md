@@ -1,5 +1,5 @@
 # Portfolio
-#### By Carlos Aguirre Oseguera
+###### By Carlos Aguirre Oseguera
 
 ### GET TO KNOW ME
 This is version of *my personal portfolio* has been updated to show my latest projects and studies at the Coding 
