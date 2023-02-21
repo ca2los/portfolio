@@ -152,7 +152,7 @@ body main .info section p {
   margin: 20px 0 30px;
 }
 body main .info section p.credits {
-  color: var(--yellow);
+  color: var(--bg_main);
   font-size: 1.25em;
   margin: 6px auto 0;
   text-align: center;
