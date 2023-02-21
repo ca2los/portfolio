@@ -193,6 +193,10 @@ body main .repositories button {
   padding: 10px;
   text-transform: uppercase;
 }
+body main .repositories button.wide {
+  max-width: 710px;
+  margin: 0;
+}
 body main .repositories button:hover {
   background: var(--green);
   color: var(--bg_main);
