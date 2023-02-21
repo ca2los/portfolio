@@ -151,6 +151,8 @@ body main .info section p.credits {
 }
 body main .info section img {
   width: 100%;
+  border: var(--border_dashed);
+  border-radius: var(--border_radius);
 }
 body main .repositories {
   display: flex;
@@ -176,6 +178,9 @@ body main .repositories .description {
   font-size: 1.25em;
   line-height: 1.4;
   margin: 0 0 40px;
+}
+body main .repositories .description a {
+  color: var(--white);
 }
 body main .repositories button {
   width: 95%;
