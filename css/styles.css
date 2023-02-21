@@ -179,7 +179,7 @@ body main .info section button {
 }
 body main .info section button:hover {
   background: var(--green);
-  color: var(--white);
+  color: var(--bg_main);
 }
 body main .repositories {
   display: flex;
