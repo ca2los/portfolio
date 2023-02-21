@@ -510,8 +510,14 @@ body footer section section.below ul.right li {
   body header section ul {
     margin: 14px 0 10px;
   }
-  body header section ul.left li img {
+  body header section ul.left li a {
+    opacity: 0.5;
+  }
+  body header section ul.left li a img {
     height: 40px;
+  }
+  body header section ul.left li a:hover {
+    opacity: 1;
   }
   body header section ul.left li:last-child {
     display: none;
