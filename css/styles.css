@@ -52,7 +52,7 @@ img {
 }
 body {
   background: var(--bg_main);
-  background-image: url('../img/bubbles.png');
+  background-image: url('../img/bubbles-full.png');
   margin: 0 auto;
 }
 body header {
