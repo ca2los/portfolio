@@ -1,6 +1,7 @@
 :root {
   --bg_main: #291D90;
   --border_solid: 1px solid #6A5ED5;
+  --border_thick: 6px solid #fff;
   --border_dashed: 1px dashed #B05ED5;
   --border_radius: 8px;
   --green: #38FFAC;
@@ -151,7 +152,7 @@ body main .info section p.credits {
 }
 body main .info section img {
   width: 100%;
-  border: var(--border_dashed);
+  border: var(--border_thick);
   border-radius: var(--border_radius);
 }
 body main .repositories {
