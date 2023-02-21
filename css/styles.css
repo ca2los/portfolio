@@ -52,6 +52,7 @@ img {
 }
 body {
   background: var(--bg_main);
+  background-image: url('../img/bubbles.png');
   margin: 0 auto;
 }
 body header {
@@ -151,7 +152,7 @@ body main .info section p {
   margin: 20px 0 30px;
 }
 body main .info section p.credits {
-  color: var(--white);
+  color: var(--yellow);
   font-size: 1.25em;
   margin: 6px auto 0;
   text-align: center;
