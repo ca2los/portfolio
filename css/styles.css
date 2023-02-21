@@ -148,7 +148,7 @@ body main .info section h4 {
   text-align: center;
 }
 body main .info section p {
-  color: var(--neon_02);
+  color: var(--neon_03);
   font-size: 1.875em;
   margin: 20px 0 30px;
 }
