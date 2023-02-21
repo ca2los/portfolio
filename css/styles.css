@@ -217,6 +217,9 @@ body main .repositories .box {
 body main .repositories .box.wide {
   width: 23%;
 }
+body main .repositories .box.wide h4.date {
+  color: var(--yellow);
+}
 body main .repositories .box a {
   text-decoration: none;
 }
