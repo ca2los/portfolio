@@ -53,6 +53,10 @@
                             }
                             a {
                                 display: block;
+                                opacity: .5;
+                                &:hover {
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
@@ -113,7 +117,8 @@
                         }
                     }
                     h4 {
-                        color: var(--neon_01);
+                        background: var(--green);
+                        color: var(--bg_main);
                         font-size: 1.25em;
                         font-weight: 400;
                         margin: 14px auto 0;
@@ -564,15 +569,9 @@
                         margin: 14px 0 10px;
                         &.left {
                             li {
-                                a {
-                                    opacity: .5;
-                                    img {
-                                        height: 40px;
+                                img {
+                                    height: 40px;
 
-                                    }
-                                    &:hover {
-                                        opacity: 1;
-                                    }
                                 }
                                 &:last-child {
                                     display: none;

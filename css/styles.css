@@ -79,6 +79,10 @@ body header section ul.left li img {
 }
 body header section ul.left li a {
   display: block;
+  opacity: 0.5;
+}
+body header section ul.left li a:hover {
+  opacity: 1;
 }
 body header section ul.right li {
   list-style: none;
@@ -133,7 +137,8 @@ body main .info section h1 span {
   margin: 0 0 0 90px;
 }
 body main .info section h4 {
-  color: var(--neon_01);
+  background: var(--green);
+  color: var(--bg_main);
   font-size: 1.25em;
   font-weight: 400;
   margin: 14px auto 0;
@@ -510,14 +515,8 @@ body footer section section.below ul.right li {
   body header section ul {
     margin: 14px 0 10px;
   }
-  body header section ul.left li a {
-    opacity: 0.5;
-  }
-  body header section ul.left li a img {
+  body header section ul.left li img {
     height: 40px;
-  }
-  body header section ul.left li a:hover {
-    opacity: 1;
   }
   body header section ul.left li:last-child {
     display: none;
