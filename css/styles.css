@@ -160,6 +160,11 @@ body main .repositories {
   justify-content: center;
   margin: 40px auto 60px;
 }
+body main .repositories.special {
+  background: #301dd7;
+  padding: 50px 0;
+  border-radius: var(--border_radius);
+}
 body main .repositories .title {
   width: 92%;
   color: var(--green);
@@ -185,7 +190,7 @@ body main .repositories .description a {
 body main .repositories button {
   width: 95%;
   max-width: 640px;
-  background: var(--bg_main);
+  background: none;
   border: 1px solid var(--green);
   border-radius: var(--border_radius);
   color: var(--white);
@@ -274,7 +279,7 @@ body main .repositories .box p {
 }
 body main .repositories .box:hover {
   border: 1px solid rgba(106, 94, 213, 0.5);
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.2) 100%);
   -webkit-box-shadow: 0 14px 12px -18px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 14px 12px -18px rgba(0, 0, 0, 0.7);
   box-shadow: 0 14px 12px -18px rgba(0, 0, 0, 0.7);
@@ -288,8 +293,10 @@ body main .repositories .box:hover p {
   margin: 0 0 18px;
 }
 body footer {
+  background: #301dd7;
   display: flex;
   justify-content: center;
+  margin-top: 100px;
   padding: 80px 9% 20px;
 }
 body footer section h2 {
