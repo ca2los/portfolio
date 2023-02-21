@@ -184,7 +184,7 @@ body main .repositories .description a {
 }
 body main .repositories button {
   width: 95%;
-  max-width: 610px;
+  max-width: 640px;
   background: var(--bg_main);
   border: 1px solid var(--green);
   border-radius: var(--border_radius);
