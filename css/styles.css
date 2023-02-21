@@ -148,8 +148,9 @@ body main .info section h4 {
   text-align: center;
 }
 body main .info section p {
-  color: var(--neon_03);
+  color: var(--white);
   font-size: 1.875em;
+  font-weight: 200;
   margin: 20px 0 30px;
 }
 body main .info section p.credits {
@@ -640,6 +641,7 @@ body footer section section.below ul.right li {
   body main .info section p {
     color: var(--white);
     font-size: 1em;
+    font-weight: 400;
     line-height: 1.6;
   }
   body main .info section p.credits {
