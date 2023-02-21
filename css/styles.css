@@ -179,7 +179,7 @@ body main .repositories .description {
 }
 body main .repositories button {
   width: 95%;
-  max-width: 400px;
+  max-width: 610px;
   background: var(--bg_main);
   border: 1px solid var(--green);
   border-radius: var(--border_radius);
@@ -194,7 +194,6 @@ body main .repositories button {
   text-transform: uppercase;
 }
 body main .repositories button.wide {
-  max-width: 710px;
   margin: 0;
 }
 body main .repositories button:hover {
@@ -477,6 +476,11 @@ body footer section section.below ul.right li {
     width: 84%;
   }
   body main .repositories .box {
+    width: 36%;
+    margin: 0 2% 4%;
+    padding: 4%;
+  }
+  body main .repositories .box.wide {
     width: 36%;
     margin: 0 2% 4%;
     padding: 4%;
