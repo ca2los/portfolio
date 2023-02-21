@@ -546,6 +546,9 @@ body footer section section.below ul.right li {
   }
   body header section ul.left li img {
     height: 40px;
+    background: var(--bg_main);
+    border-radius: 100px;
+    border: 2px solid var(--bg_main);
   }
   body header section ul.left li:last-child {
     display: none;
